@@ -1,7 +1,7 @@
 /*Подключение шрифтов*/
 @font-face {
     font-family:'Poppins', sans-serif;
-    src: url(../fonts/Poppins-Regular.ttf); format("truetype");
+    src: url(../fonts/Poppins-Regular.ttf) format("truetype");
     font-weight: 400;
 }
 .body{
@@ -12,23 +12,16 @@
 *{
     box-sizing: border-box;
 }
-.header{
-padding: 15px 0;
+
+.header_iner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
 }
 .container{
-width: 100%;
-max-width: 1140px;
-margin: 0 auto;
-}
-.header_iner{
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-.nav{
-display: flex;
-font-size: 15px;
-font-weight: 400;
+    width: 1440px;
+    margin: 0 auto;
 }
 .nav_link{
 margin-left: 30px;
@@ -39,3 +32,49 @@ text-decoration: none;
 opacity: 1;
 text-decoration: underline;
 }
+
+.section1{
+    margin-top: 10px;
+    background: url("../img/main.png") no-repeat center center/ cover;
+    /* height: 1200px; */
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.glav_text{
+    padding: 315px 0 60px 0;
+}
+
+.logo3{
+    width: 128px;
+    height: 102px;
+
+}
+
+.text1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 45px;
+
+    text-align: center;
+
+    color: #45525B;
+}
+
+.strela{
+    margin-top: 150px;
+}
+
+.sec2_texts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
