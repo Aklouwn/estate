@@ -72,9 +72,166 @@ text-decoration: underline;
     margin-top: 150px;
 }
 
+.section2{
+    padding: 100px;
+    background: #FAFAFC;
+}
+
 .sec2_texts{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.sec2_texts2{
+    text-align: left;
+
+}
+
+.sec2_texts1{
+    text-align: left;
+    margin-top: 55px;
+}
+
+.text2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 140% */
+    
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    color: #FF8A63;
+}
+
+.text3{
+    margin-top: -20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    color: #45525B;
+    line-height: 53px;
+    margin-right: 148px;
+}
+
+.text4, .text5{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.sec2block{
+    display: flex;
+    
+}
+
+.Avatext{
+    margin-left: 40px;
+}
+
+.Ava_text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    letter-spacing: 2px;
+    color: #45525B;
+}
+
+.Ava_text2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #6F7278;
+
+    margin-top: -15px;
+}
+
+.section3{
+    padding: 100px;
+}
+
+.osntext{
+
+    text-align: center;
+
+}
+
+.text6{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #45525B;
+
+    margin-top: -20px;
+}
+
+.text7{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #6F7278;
+
+    margin-top: -30px;
+}
+
+.sec3_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blocktext1{
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #45525B;
+
+    margin-top: 5px;
+}
+
+.blocktext2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #6F7278;
+
+    margin-top: -15px;
+}
+
+.blockk{
+    padding: 0 64px 0 64px
+}
+
+.blockk1{
+    padding: 40px 64px 40px 64px;
+}
+
+.section4{
+    background: url("../img/bck.png") no-repeat center center/ cover;
+    height: 624px;
+}
