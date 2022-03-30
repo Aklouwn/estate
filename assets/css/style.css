@@ -1,97 +1,83 @@
-*{
+/*Подключение шрифтов*/
+@font-face {
+    font-family:'Poppins', sans-serif;
+    src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+html{
+    scroll-behavior: smooth;
+}
+.body{
     margin: 0;
+    font-family:'Poppins', sans-serif;
+    color: #45525B;
+    scroll-behavior: smooth;
+}
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
+.header{
+padding: 15px 0;
+background-color: #ffff;
 }
-body{
+.container{
+    margin: 0 auto;
     width: 1440px;
-    font-weight: 400;
-    font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
 }
-a{
-    text-decoration: none;
+.header_wrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
-/* -------------------------- Header -------------------------- */
-header{
-    width: 1440px;
-    height: 66px;
-    background-color: white;
-    display: flex;
-    padding: 0 146px 0 136px;
-    position: fixed;
-    left: 0;
-    top: 0;
+.nav{
+display: flex;
+font-family: poppins;
+font-size: 15px;
+font-weight: 400;
 }
-header img{
-    margin-top: 15px;
-    width: 102px;
-    height: 37px;
+.nav_link{
+margin-left: 30px;
+color:#444444;
+text-decoration: none;
 }
-header ul li a{
-    font-size: 15px;
-    color: #444444;
-    list-style: none;
-    display: inline;
-    margin-right: 30px;
-}
-header ul li{
-    font-size: 15px;
-    color: #444444;
-    list-style: none;
-    display: inline;
-}
-header ul li a:hover{
-    font-size: 16px;
-}
-header nav{
-    margin: 21px 0 0 650px;
-}
-/* -------------------------- Section 1 -------------------------- */
-.Sec1Div{
-    width: 1440px;
-    background-image: url(../images/BgMain.svg);
-    height: 724px;
-    padding-top: 245px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    
-}
-.Sec1Div img{
-    align-self: center;
-}
-.Sec1Div h2{
-    width: 456px;
-    color: #45525B;
-    margin: 19px 0 149px 0;
-    font-size: 32px;
-    align-self: center;
-    font-weight: 400;
+.nav_link:hover{
+opacity: 0.5;
+text-decoration: underline;
 }
 
-.arrowdown{
-    animation: slide-in 2.5s both infinite;
+.header_iner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 30px;
 }
-  
-@keyframes slide-in{
-    0%{
-      transform: translateY(-50px);
-    }
-    50%{
-      transform: translateY(0px);
-    }
-    100%{
-        transform: translateY(-50px);
-    }
+.section1{
+margin-top: 5px;
+background: url("../img/main.png") no-repeat center center / cover;
+height: 900px;
 }
-/* -------------------------- Section 2 -------------------------- */
+.section_wrapper{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.img{
+height: 103px;
+width: 128px;
+padding: 315px 0 60px 0;
+font-family: poppins;
+font-size: 32px;
+line-height: 45px;
+width: 525px;
+}
+.strela{
+margin-top: 150px;
+}
+/*sectio2*/
 .Sec2Div{
     width: 1440px;
     height: 486px;
@@ -99,6 +85,7 @@ header nav{
     padding: 100px 151px 0 136px;
 }
 h1{
+    font-family: poppins;
     font-weight: 400;
     font-size: 48px;
     line-height: 53px;
@@ -108,6 +95,7 @@ h1{
 }
 .LeftDivSec2 p{
     color: #ff8a63;
+    font-family: poppins;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
@@ -123,6 +111,7 @@ h1{
     height: 287px;
 }
 .Sec2MainText p{
+    font-family: poppins;
     font-size: 16px;
 }
 .LeftDivSec2{
@@ -130,11 +119,13 @@ h1{
 }
 #ManagingBroker{
     letter-spacing: 2px;
+    font-family: poppins;
     font-size: 12px;
     color: #6F7278;
     text-transform: uppercase;
 }
 #AvaOrnText{
+    font-family: poppins;
     font-size: 16px;
     color: #45525B;
 }
@@ -143,7 +134,6 @@ h1{
 }
 /* -------------------------- Section 3 -------------------------- */
 .Sec3Div{
-    width: 1440px;
     height: 931px;
     display: flex;
     flex-direction: column;
@@ -156,12 +146,14 @@ h1{
 }
 .Sec3Div .SpanNew h2{
     color: #45525B;
+    font-family: poppins;
     font-size: 36px;
     font-weight: 400;
 }
 .LoremSec3{
     width: 505px;
     color:#6F7278;
+    font-family: poppins;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
@@ -169,6 +161,7 @@ h1{
 }
 .RequirementsSec3{
     color: #ff8a63;
+    font-family: poppins;
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: 400;
@@ -205,11 +198,13 @@ h1{
     padding: 12px;
 }
 .SecondTextSec3{
+    font-family: poppins;
     font-size: 14px;
     font-weight: 400;
     color: #6F7278;
 }
 .FirstTextSec3{
+    font-family: poppins;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -217,16 +212,15 @@ h1{
 }
 /* -------------------------- Section 4 -------------------------- */
 .Sec4Div{
-    width: 1440px;
     height: 600px;
-    background-image: url(../images/HouseBg.png);
+    background: url("../img/backGr.png") no-repeat center center / cover;
     padding: 230px 105px 0 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 .Sec4Div:hover{
-    background-image: url(../images/BackgroundHouseOpacity.png);
+    background-image: url(../img/BackgroundHouseOpacity.png);
 }
 .Sec4Div:hover a{
     visibility: visible;
@@ -243,6 +237,7 @@ h1{
     height: 21px;
     justify-content: space-between;
     color:#45525B;
+    font-family: poppins;
     font-size: 15px;
     font-weight: 400;
     visibility: hidden;
@@ -254,6 +249,7 @@ h1{
 }
 .NullaSec4{
     width: 255px;
+    font-family: poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
@@ -263,12 +259,12 @@ h1{
 .LambourneRoad{
     letter-spacing: 2px;
     color: #45525B;
+    font-family: poppins;
     font-size: 14px;
     text-transform: uppercase;
 }
 /* -------------------------- Section 5 -------------------------- */
 .Sec5Div{
-    width: 1440px;
     height: 1204px;
     background-color: #fafafc;
     padding: 100px 136px 0 136px;
@@ -276,6 +272,7 @@ h1{
     flex-direction: column;
 }
 .Sec5Div h2{
+    font-family: poppins;
     font-size: 36px;
     font-weight: 400;
     color: #45525B;
@@ -283,6 +280,7 @@ h1{
 .MorbiSec5{
     width: 574px;
     line-height: 22px;
+    font-family: poppins;
     font-size: 18px;
     color: #6F7278;
     font-weight: 400;
@@ -290,6 +288,7 @@ h1{
 }
 .currentListings{
     color: #ff8a63;
+    font-family: poppins;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -308,6 +307,7 @@ h1{
     margin: 0 8px 0 30px;
 }
 .UnderHouse p{
+    font-family: poppins;
     font-size: 12px;
     color: #45525B;
     font-weight: 400;
@@ -326,10 +326,12 @@ h1{
 .Sec5Div h4{
     margin-bottom: 10px;
     color: #45525B;
+    font-family: poppins;
     font-size: 20px;
     font-weight: 400;
 }
 .HouseType{
+    font-family: poppins;
     font-size: 12px;
     font-weight: 400;
     color: #6F7278;
@@ -356,6 +358,7 @@ h1{
     margin-top: 26px;
 }
 .ShowAllListings p{
+    font-family: poppins;
     font-size: 15px;
     font-weight: 400;
     color: #45525B;
@@ -365,32 +368,15 @@ h1{
     display: flex;
     align-self: center;
 }
-
-.arrowicon{
-    margin-left: 6px;
-    animation: arrowicon 2.5s linear infinite;
-}
-  
-@keyframes arrowicon{
-    0%{
-        transform: translateX(30px);
-    }
-    50%{
-        transform: translateX(0px);
-    }
-    100%{
-        transform: translateX(30px);
-    }
-}
 /* -------------------------- Section 6 -------------------------- */
 .Sec6Div{
-    width: 1440px;
     height: 484px;
     background-color: white;
     display: flex;
     padding: 100px 136px 0 136px; 
 }
 .OurPeople{
+    font-family: poppins;
     font-size: 14px;
     font-weight: 400;
     color: #ff8a63;
@@ -399,6 +385,7 @@ h1{
 }
 .Sec6Div h2{
     line-height: 43px;
+    font-family: poppins;
     font-size: 36px;
     font-weight: 400;
     color: #45525B;
@@ -408,12 +395,14 @@ h1{
     width: 368px;
     color: #6F7278;
     line-height: 22px;
+    font-family: poppins;
     font-size: 17px;
     font-weight: 400;
     margin-top: 11px;
 }
 .Sec6Div a{
     color: #45525B;
+    font-family: poppins;
     font-size: 15px;
     font-weight: 400;
     display: flex;
@@ -435,17 +424,18 @@ h1{
 }
 .ManagingBroker{
     letter-spacing: 2px;
+    font-family: poppins;
     font-size: 12px;
     color: #6F7278;
     text-transform: uppercase;
 }
 .AvaOrnText{
+    font-family: poppins;
     font-size: 16px;
     color: #45525B;
 }
 /* -------------------------- Section 7 -------------------------- */
 .Sec7Div{
-    width: 1440px;
     height: 688px;
     background-color: #fafafc;
     display: flex;
@@ -454,6 +444,7 @@ h1{
 }
 .Sec7Div .TopText{
     color: #ff8a63;
+    font-family: poppins;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
@@ -462,6 +453,7 @@ h1{
 }
 .Sec7Div h2{
     color: #45525b;
+    font-family: poppins;
     font-size: 36px;
     font-weight: 400;
     align-self: center;
@@ -470,6 +462,7 @@ h1{
 .NewsRoomArrow{
     display: flex;
     color: #45525B;
+    font-family: poppins;
     font-size: 15px;
     font-weight: 400;
     margin-top: 20px;
@@ -497,6 +490,7 @@ h1{
     background-color: white;
 }
 .Sec7Div h6{
+    font-family: poppins;
     font-weight: 400;
     font-size: 16px;
     color: #45525B;
@@ -506,6 +500,7 @@ h1{
 }
 .TitleSec7{
     letter-spacing: 2px;
+    font-family: poppins;
     font-size: 12px;
     font-weight: 400;
     color:#ff8a63;
@@ -513,6 +508,7 @@ h1{
     margin: 28px 0 0 30px;
 }
 .DateSec7{
+    font-family: poppins;
     font-size: 13px;
     font-weight: 400;
     color: #6F7278;
@@ -521,13 +517,13 @@ h1{
 /* -------------------------- Section 8 -------------------------- */
 .Sec8Div{
     height: 399px;
-    width: 1440px;
     background-color: #45525B;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
 }
 .Sec8Div a{
+    font-family: poppins;
     padding: 10px 18px 11px 18px;
     background-color: white;
     color: #45525B;
@@ -547,11 +543,13 @@ h1{
     font-weight: 400;
 }
 .SeenEnougnQuestion{
+    font-family: poppins;
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 .MorbiSec8{
+    font-family: poppins;
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 30px;
@@ -560,25 +558,30 @@ h1{
     align-self: center;
     text-align: center;
     color: white;
+    font-family: poppins;
     font-size: 36px;
     font-weight: 400;
     margin-bottom: 11px;
 }
 /* -------------------------- Footer -------------------------- */
 footer{
-    width: 1440px;
     height: 563px;
     background-color: #292c32;
     padding: 100px 136px 0 136px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
 }
 .LogoFooter{
     align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer ul li{
     list-style-type: none;
     margin-top: 9px;
+    font-family: poppins;
     font-size: 16px;
     font-weight: 400;
 }
@@ -588,8 +591,14 @@ footer div{
 footer a{
     color: white;
 }
+.footer_wrapper{
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+}
 footer ul .NameLiFooter{
     color: #ff8a63;
+    font-family: poppins;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
@@ -610,6 +619,7 @@ footer ul .NameLiFooter{
 .InputFooter{
     padding-left: 5px;
     color: #6F7278;
+    font-family: poppins;
     font-size: 16px;
     font-weight: 400;
     width: 458px;
@@ -618,6 +628,7 @@ footer ul .NameLiFooter{
     border: 1px solid #e5e7eb;
 }
 input::-webkit-input-placeholder{
+    font-family: poppins;
     font-size: 16px;
     font-weight: 400;
     color: #6F7278;
@@ -631,17 +642,20 @@ input::-webkit-input-placeholder{
     color: #ff8a63;
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-family: poppins;
     font-size: 14px;
     font-weight: 400;
 }
 .SubscriptionText{
     color: #fafafc;
+    font-family: poppins;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 10px;
     width: 450px;
 }
 .InputEmail a{
+    font-family: poppins;
     font-size: 16px;
     color: white;
     padding: 8px;
@@ -652,7 +666,9 @@ input::-webkit-input-placeholder{
     margin: 7px 0 0 -80px;
 }
 .UnderUlAndInput{
+    font-family:poppins ;
     margin-top: 26px;
+    
     display: flex;
     color: white;
 }
@@ -667,4 +683,7 @@ input::-webkit-input-placeholder{
 .UnderUlAndInput div{
     display: flex;
     margin-left: 553px;
+}
+.footer_content{
+    display: grid;
 }
